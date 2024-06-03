@@ -25,3 +25,6 @@ bool operator < (Edge const &other){
 }
 };
 ```
+
+With structs we can use [[Constructor]]s.
+With pointers to structs we can use the [[Arrow Operator]].

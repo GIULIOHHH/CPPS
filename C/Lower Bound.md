@@ -1,5 +1,10 @@
 #C 
-Binary searches for the first occurrence of a value in an array.
+Binary searches for the first occurrence of a value in an array and returns an iterator.
 ```C++
-lower_bound(arr1.begin(), arr1.end(), 20)
+auto lb =lower_bound(arr1.begin(), arr1.end(), 20)
+```
+
+To get the value
+```C++
+cout<<*lb
 ```

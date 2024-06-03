@@ -313,6 +313,90 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "C/LCM (Minimo comune multiplo).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3457e215c024f203",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/Lower Bound.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0237a603db3ec9d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/merge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b5b0fa645c65c81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/Asterisk.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89e64930c1dc5cdb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/Asterisk.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df574f64bbc43f60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Segment Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43eb4f1bedfc9ec0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Coordinate Compression.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b23913322a65aa9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Alg/Segment Tree.md",
                 "mode": "source",
                 "source": false
@@ -320,7 +404,7 @@
             }
           }
         ],
-        "currentTab": 25
+        "currentTab": 32
       }
     ],
     "direction": "vertical"
@@ -458,41 +542,42 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "c8a0b22cec2a6573",
+  "active": "9b23913322a65aa9",
   "lastOpenFiles": [
     "Alg/Minimum Spanning Tree (MST).md",
-    "Alg/Matrix Exponentiation.md",
-    "Alg/Disjoint set union (DSU).md",
-    "Alg/Binary Exponentiation.md",
+    "Alg/Fractional Cascading.md",
+    "Alg/Extra algorithms.md",
     "Alg/Directed Cycle Detection.md",
     "Alg/Segment Tree.md",
-    "Definitions/Associative operation.md",
-    "Trash/Template.md",
-    "Holders/Algorithms.md",
-    "Alg/Extra algorithms.md",
-    "C/Copy 2 arrays of the same size.md",
-    "C/Fast Input-Output.md",
-    "C/Lower Bound.md",
-    "C/map.count.md",
-    "Holders/Definitions.md",
-    "Holders/Good practices.md",
     "Definitions/Degree.md",
-    "Definitions/Sparse vs Dense graph.md",
-    "Holders",
-    "C/vector.resize.md",
-    "C/rotate.md",
+    "C/Tie.md",
+    "Holders/Algorithms.md",
+    "Alg/Coordinate Compression.md",
+    "README.md",
+    "C/Asterisk.md",
+    "C/Pointers.md",
+    "Holders/Good practices.md",
+    "Holders/Definitions.md",
+    "Alg/TIMINGS.md",
+    "C/Struct.md",
+    "Alg/Matrix Exponentiation.md",
+    "C/Arrow Operator.md",
+    "C/back_inserter.md",
+    "C/Constructor.md",
+    "C/merge.md",
+    "Definitions/Persistent Data Structure.md",
     "Welcome.md",
+    "C/Lower Bound.md",
+    "C/LCM (Minimo comune multiplo).md",
+    "Alg/Disjoint set union (DSU).md",
+    "Holders",
     "Trash/Pasted image 20240530195139.png",
     "Trash/Pasted image 20240504151040.png",
     "Trash/Pasted image 20240511121227.png",
-    "Trash/Code.md",
-    "C/Struct.md",
-    "Alg/TIMINGS.md",
-    "Definitions/Bipartite Graph.md",
-    "C/LCM (Minimo comune multiplo).md",
     "Definitions",
     "Alg",
     "Trash/Pasted image 20240503174226.png",
