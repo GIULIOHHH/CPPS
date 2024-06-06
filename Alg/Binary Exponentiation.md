@@ -60,7 +60,7 @@ long long binpow(long long a, long long b){
 	long long res=1;
 	long long s=a;
 	//while the binary representation has ones
-	while b(>0){
+	while (b>0){
 		//we take the AND of the first bit and 1 (will only be true if both of them are 1)
 		if (b&1){
 		//If the bit at the current index is 1, multiply the result by the square s.

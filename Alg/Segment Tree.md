@@ -220,6 +220,45 @@ Vertex* update(Vertex *v, int lb, int rb, int pos, int new_val){
 }
 ```
 # Dynamic Segment Tree
+When $N\ge10^5$ we cannot store a normal segment tree.
+We can create only the root and create the other vertices when needed.
+```C++
+struct Vertex{
+	Vertex *l=nullptr, *r=nullptr;
+	int sum=0;
+	};
+
+//creates 2 children
+void extend(Vertex *v, int lb, int rb){
+	//if the node doesnt have children and isnt a leaf
+	if(!v->l&&lb<rb){
+		v->l=new Vertex();
+		v->r=new Vertex();
+	}
+void add(Vertex *v, int lb, int rb, int pos, int val){
+	v->sum+=val;
+	//return if we reach a leaf
+	if (left+1==right) return;
+	extend(v,lb,rb);
+	int mid=(lb+rb)/2;
+	if (pos<=mid)
+		add(v->l,lb,mid,pos,val);
+	else
+		add(v->r,mid+1,rb,pos,val)
+}
+
+int query (Vertex *v,int lb,int rb, int lq, int rq){
+	if (lq>rq)
+		return 0;
+	if (lq==lb&&rq==rb)
+		return v->sum;
+	extend(v,lb,rb);
+	int mid=(lb+rb)/2;
+	return query(v->l,lb,mid,lq,min(rq,mid))+query(v->r,mid+1,rb,max(lq,mid+1),rq)
+}
+```
+# [[Segment Tree Beats]].
+
 # Applications
 ### Compute the GCD/LCM
 They are [[Associative operation]]s, so we can store the GCD/LCM for each vertex and then combine them.
@@ -250,8 +289,37 @@ int find_kth(int v, int lb, int rb,int k){
 We can use the same logic to find:
 - The first element greater than a given amount
 - The first array prefix to be bigger than a given amount.
-### Finding the max length subsegment online
+### Finding the max sum subsegment online
+At each vertex we store 4 values:
+- The sum of all elements in the range.
+- The max prefix in the range.
+- The max suffix in the range.
+- The max sum segment in the range.
+The max sum segment for a node is either the max sum for the left/right child or the left max suffix + the right max prefix.
+![[Pasted image 20240604112555.png|200]]
+The max prefix for a node is either the left max prefix or the sum of all elements on the left + the right max prefix.
 
+```C++
+struct data{
+	int sum,pref,suf,ans;
+};
+//joins left and right children
+data combine(data l, data r){
+	data res;
+	res.sum=l.sum+r.sum;
+	res.pref=max(l.pref,l.sum+r.pref);
+	res.suf=max(r.suf,r.sum+l.suf);
+	res.ans=max({r.ans,l.ans,l.suf+r.pref});
+	return res
+}
+//creates a new leaf node
+data make_data(int val){
+	data res;
+	res.sum=val;
+	res.pref= res.suf=res.ans=max(0,val);
+	return res;
+}
+```
 
 ### Finding the smallest number greater then $k$ in a range.
 - We store the list in sorted order at each vertex. 
@@ -278,8 +346,18 @@ void build(int a[], int v, int lb,int rb){
 - This can be sped up by using [[Fractional Cascading]].
 
 ### Finding the $k$th smallest number in a range
-We use a persistent segment tree.
+- We transform our initial array using [[Coordinate Compression]].
 
+- We use persistent segment trees:
+	- We store the roots in a vertex.
+	- The length of the segment tree is the number of unique values.
+	- We start from a segment tree where every value is 0.
+	- For each new prefix we update the segment tree:
+		- Each leaf $i$ holds the number of times the element $i$ appeared in the prefix.
+		- Each vertex with range $[lb,rb]$ holds the number of times the range appeared in the prefix.
+- To get the times that values show up in a range $[lb,rb]$ we use the prefixes ($root[rb]-root[lb]$).
+- Since we want the $k$th smallest element as long as there are more then $k$ elements to the left we go left. 
+- Once there arent we remove the elements on the left from $k$ and we go right.
 ```C++
 //initializes the entire tree with 0s.
 Vertex* build(int lb, int rb){
@@ -288,12 +366,14 @@ Vertex* build(int lb, int rb){
 	int mid=(lb+rb)/2;
 	return new Vertex(build(lb,mid),build(mid+1,rb));
 }
-
+//adds 1 given a value.
 Vertex* update(Vertex *v,int lb,int rb, int pos){
-
+	//when we reach the leaf
 	if (lb==rb)
+		//create a new vertex with a value increased by 1
 		return new Vertex(v->sum+1);
 	int mid=(lb+rb)/2;
+	//otherwise check if the wanted leaf is in the left or right child and create a new vertex.
 	if (pos<=mid)
 		return new Vertex(update(v->l,lb,mid,pos),v->r);
 	else
@@ -301,22 +381,31 @@ Vertex* update(Vertex *v,int lb,int rb, int pos){
 }
 
 int find_kth(int lb, int rb, Vertex *vl, Vertex *vr, int k){
+	//return it when we reach the leaf
 	if (lb==rb)
 		return lb;
 	int mid=(lb+rb)/2;
+	//this is the amount of values in the left child of the range.
 	int left_count= vr->l->sum - vl->l->sum;
+	//We want to find the kth value. If the value in the left child is more then k we go left. Otherwise we go right and subtract the values we ignored from k.
 	if (left_count>=k)
 		return find_kth(lb, mid, vl->l, vr->l, k);
 	else
 		return find_kth(mid+1, rb, vl->r, vr->r, k-left_count);
 }
 
+//initializes the size of the array
 int lb=0, rb=MAX_INDEX+1;
+//creates a vector with pointers to the roots
 vector<Vertex*> roots;
+//adds the base tree
 roots.emplace_back(build(lb,rb));
-for (int i=0l i<a.size(),i++){
+for (int i=0; i<a.size(),i++){
+	//adds to the array an update to its last value.
 	roots.emplace_back(update(roots.back(),lb,rb,a[i]));
 }
 // find the 5th smallest number from the subarray [a[2], a[3], ..., a[19]] 
 int result = find_kth(roots[2], roots[20], lb, rb, 5);
 ```
+### Kth element on a tree path.
+https://www.youtube.com/watch?v=m3uEG4NgJx8&list=PLZU0kmvryb_HZpDW2yfn-H-RxAu_ts6xq&index=6

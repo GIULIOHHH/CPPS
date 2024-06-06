@@ -26,5 +26,13 @@ bool operator < (Edge const &other){
 };
 ```
 
+```C++
+//Creates a tree of nodes
+struct Node{
+	int max;
+	long long sum;
+} Tree[SIZE];
+```
+
 With structs we can use [[Constructor]]s.
 With pointers to structs we can use the [[Arrow Operator]].

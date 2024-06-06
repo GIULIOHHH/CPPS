@@ -1,11 +1,12 @@
-# CF repo
- 
 
-td Algo
-
-- [ ] Advanced Segment Trees.
+## td Algo
+- [x] Binary Exponentiation
+- [x] Basic Matrix Exponentiation
+- [x] DSU
+- [x] MST
+- [x] Advanced Segment Trees.
 - [x] Index compression.
-- [ ] Hashing.
+- [x] Hashing.
 - [ ] Dijkstra.
 - [ ] Max Flow
 - [ ] Fractional Cascading
@@ -13,7 +14,13 @@ td Algo
 - [ ] DP optimizations.
 - [ ] Tries.
 - [ ] Advanced Matrix Exponentiation.
-td C
+- [ ] Heavy-Light Decomposition?
+- [ ] Combinatorics
+- [ ] Wavelet Trees?
+- [ ] https://www.youtube.com/watch?v=JDuVLyKn7Yw
+- [ ] https://cp-algorithms.com/string/suffix-array.html
+## td C
 - [ ] Understand pointers
 - [ ] Map 
 - [ ] Unordered Map
+- [x] Set
