@@ -1,4 +1,4 @@
-#CP
+ #CP
 # What 
 Comparing strings in $O(1)$.
 # Time Complexity
@@ -77,6 +77,8 @@ When comparing 2 substrings we can just have them both raised to the same power.
 If we have a substring multiplied by $p^i$ and another by $p^j$:
 - If $i$ is smaller we multiply the first by $p^{\;j-i}$, aka $p^j/{p^i}$
 - if $i$ is bigger we multiply the second by $p^{\;i-j}$
+
+>We are taking the smallest $p$ substring and pushing it up in order to have it match the bigger $p$.
 # Applications
 
 ## Check for duplicate strings.
@@ -121,3 +123,26 @@ for(int i=0;i+s_size-1<t_size;i++){
 	if (current_sub==s_hash*p_pow[i]%m)
 		occurrences.push_back(i);
 ```
+
+# Shortest palindromic suffix
+Given a string $s$ return the smallest palindrome that can be formed by adding zeroes or more characters at the end.
+>For example abba-> abba
+>zyabba->zyabbaYZ
+
+>abba is the longest palindromic suffix. Then we have to append everything else. The actual task is finding the lowest palindromic suffix.
+
+- Start from the end, compute a suffix and its reverse.
+- To handle the reverse:
+	- Start by hashing the current letter.
+	- Left shift everything by multiplying by $p$.
+	- Add to the end the last letter, multiplying it by $p^0$.
+
+> For example
+> a/a
+> ba/ab
+> bba/abb
+> abba/abba
+> yabba/abbay
+> zyabba/abbayz
+
+file:///C:/Users/admin/Downloads/String_Processing_Rolling_Hash.pdf

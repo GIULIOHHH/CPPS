@@ -9,7 +9,8 @@
 - `set.size()` returns the size.
 - `set.empty()` returns if the set is empty.
 - `set.insert(val)` inserts a value.
-- `set.erase(val)`/`set.erase(first,last)` removes elements.
+- `set.erase(val)`/`set.erase(first,last)` removes elements. 
+	- Does nothing if the val isnt there.
 - `set.clear()` removes all elements.
 - `set.find(val)` returns an iterator to the value. If it isnt found returns an iterator to the end.
 ```C++

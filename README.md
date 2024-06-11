@@ -7,18 +7,25 @@
 - [x] Advanced Segment Trees.
 - [x] Index compression.
 - [x] Hashing.
-- [ ] Dijkstra.
-- [ ] Max Flow
-- [ ] Fractional Cascading
-- [ ] Parallel Binary Search
+- [x] Dijkstra.
+- [x] Max Flow
 - [ ] DP optimizations.
+	- [ ] Tree
+	- [x] Connected Components
+	- [x] Bit
+	- [x] Divide and conquer
+	- [x] Knuth
+	- [ ] Hull
+	- [ ] Slope Tric
+	- [ ] Square Tree dp
+- [ ] Euler path
 - [ ] Tries.
-- [ ] Advanced Matrix Exponentiation.
 - [ ] Heavy-Light Decomposition?
 - [ ] Combinatorics
-- [ ] Wavelet Trees?
+- [ ] Advanced Matrix Exponentiation.
 - [ ] https://www.youtube.com/watch?v=JDuVLyKn7Yw
-- [ ] https://cp-algorithms.com/string/suffix-array.html
+- [ ] Bipartite Graphs
+- [ ] Geometry
 ## td C
 - [ ] Understand pointers
 - [ ] Map 

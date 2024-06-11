@@ -1,13 +1,24 @@
 #CP 
 # Basic
 - [[Coordinate Compression]]
-# Graphs
+# Data structures
 - [[Disjoint set union (DSU)]]
-- [[Minimum Spanning Tree (MST)]]
 - [[Segment Tree]]
-- [[Directed Cycle Detection]]
+
+# DP tricks
+- [[Bitmask DP]]
+- [[Divide and conquer DP]]
+- [[Connected Components DP]]
+- [[Convex Hull DP]]
+- [[Knuth DP]]
+# Graphs
+- [[Minimum Spanning Tree (MST)]]
 - [[Dijkstra]]
 - [[Shortest path with negative weights]]
+- [[Max Flow (Edmonds-Karp)]]
+
+- [[Directed Cycle Detection]]
+
 # Binary search
 - [[Fractional Cascading]]
 - [[Parallel Binary Search]]
