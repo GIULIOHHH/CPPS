@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Parallel Binary Search.md",
+                "file": "C/Constructor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57386d979d226ca3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Li chao Trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
+                "file": "Alg/Combinatorics.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,13 +165,52 @@
             "id": "207e0e51b8eb7a37",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Trash/Pasted image 20240609135510.png"
+                "file": "Alg/Segment Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad7477ad2fd5e03d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Holders/TIMINGS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9cb138cfd9be638e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45c5aeef7e067ce9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Combinatorics.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -225,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alg/Parallel Binary Search.md",
+                "file": "Alg/Combinatorics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alg/Parallel Binary Search.md",
+                "file": "Alg/Combinatorics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,7 +316,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alg/Parallel Binary Search.md"
+                "file": "Alg/Combinatorics.md"
               }
             }
           },
@@ -301,43 +352,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3d68fddf45a27a08",
+  "active": "ad6388a0570d110e",
   "lastOpenFiles": [
-    "Trash/Pasted image 20240611141949.png",
-    "Trash/Pasted image 20240611141923.png",
-    "Alg/Convex Hull DP.md",
-    "Holders/Algorithms.md",
-    "Alg/Divide and conquer DP.md",
-    "Trash/Pasted image 20240611141916.png",
-    "README.md",
-    "Alg/Connected Components DP.md",
-    "Alg/Minimum Spanning Tree (MST).md",
-    "Alg/Coordinate Compression.md",
-    "Alg/Segment Tree Beats.md",
-    "Alg/Shortest path with negative weights.md",
-    "Alg/Bitmask DP.md",
-    "Alg/Parallel Binary Search.md",
-    "Alg/Knuth DP.md",
-    "Trash/Pasted image 20240610135556.png",
-    "Trash/Pasted image 20240611111837.png",
-    "Trash/Pasted image 20240611111828.png",
-    "Alg/Fractional Cascading.md",
-    "Trash/Pasted image 20240610105516.png",
-    "Alg/Dijkstra.md",
+    "Pasted image 20240619151413.png",
+    "Pasted image 20240619151219.png",
+    "Pasted image 20240618165651.png",
+    "Pasted image 20240618164731.png",
+    "Pasted image 20240618161508.png",
     "Alg/Max Flow (Edmonds-Karp).md",
-    "Alg/Directed Cycle Detection.md",
-    "Alg/Binary Exponentiation.md",
+    "Alg/Combinatorics.md",
     "Alg/Matrix Exponentiation.md",
-    "Alg/Hashing.md",
-    "Alg/Disjoint set union (DSU).md",
-    "Alg/Segment Tree.md",
-    "Trash/Pasted image 20240609191521.png",
-    "Holders/Definitions.md",
+    "Holders/Algorithms.md",
+    "Holders/Problem Solving.md",
+    "Holders/History.md",
+    "README.md",
+    "Trash/Pasted image 20240613232811.png",
+    "Trash/Pasted image 20240613232014.png",
+    "Trash/Pasted image 20240613232013.png",
     "Holders/TIMINGS.md",
-    "Trash/Pasted image 20240609140816.png",
-    "Alg/Extra algorithms.md",
-    "Alg/Finding Topological Ordering.md",
+    "Holders/Good practices.md",
+    "C/memset().md",
+    "Alg/Segment Tree.md",
+    "Alg/Dijkstra.md",
+    "C/Set.md",
+    "C/Struct.md",
+    "Alg/Li chao Trees.md",
+    "Definitions/Division with MOD.md",
     "Trash/Pasted image 20240609135510.png",
+    "C/Fast Input-Output.md",
+    "Alg/Knuth DP.md",
+    "Trash/Pasted image 20240612134606.png",
+    "Convex Hull.md",
+    "C/mutable.md",
+    "Alg/Connected Components DP.md",
+    "Alg/Convex Hull DP.md",
+    "C/Constructor.md",
+    "Trash/Pasted image 20240612134317.png",
+    "Alg/Parallel Binary Search.md",
+    "Alg/Divide and conquer DP.md",
     "Holders",
     "Definitions",
     "Alg",

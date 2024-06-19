@@ -26,3 +26,4 @@
 - [[Binary Exponentiation]]
 - [[Matrix Exponentiation]]
 - [[Hashing]]
+- [[Combinatorics]]
