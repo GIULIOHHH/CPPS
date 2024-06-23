@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Combinatorics.md",
+                "file": "Holders/History.md",
                 "mode": "source",
                 "source": false
               }
@@ -276,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alg/Combinatorics.md",
+                "file": "Holders/History.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alg/Combinatorics.md",
+                "file": "Holders/History.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,7 +316,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alg/Combinatorics.md"
+                "file": "Holders/History.md"
               }
             }
           },
@@ -354,17 +354,19 @@
   },
   "active": "ad6388a0570d110e",
   "lastOpenFiles": [
+    "Alg/Combinatorics.md",
+    "Holders/Problem Solving.md",
+    "Trash/TemplateHistory.md",
+    "Holders/History.md",
+    "Pasted image 20240619153425.png",
     "Pasted image 20240619151413.png",
     "Pasted image 20240619151219.png",
     "Pasted image 20240618165651.png",
     "Pasted image 20240618164731.png",
     "Pasted image 20240618161508.png",
     "Alg/Max Flow (Edmonds-Karp).md",
-    "Alg/Combinatorics.md",
     "Alg/Matrix Exponentiation.md",
     "Holders/Algorithms.md",
-    "Holders/Problem Solving.md",
-    "Holders/History.md",
     "README.md",
     "Trash/Pasted image 20240613232811.png",
     "Trash/Pasted image 20240613232014.png",
@@ -381,13 +383,11 @@
     "Trash/Pasted image 20240609135510.png",
     "C/Fast Input-Output.md",
     "Alg/Knuth DP.md",
-    "Trash/Pasted image 20240612134606.png",
     "Convex Hull.md",
     "C/mutable.md",
     "Alg/Connected Components DP.md",
     "Alg/Convex Hull DP.md",
     "C/Constructor.md",
-    "Trash/Pasted image 20240612134317.png",
     "Alg/Parallel Binary Search.md",
     "Alg/Divide and conquer DP.md",
     "Holders",

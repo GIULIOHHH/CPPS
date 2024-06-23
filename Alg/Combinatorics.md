@@ -1,4 +1,19 @@
 #CP 
+## Index
+[[#Addition Principle]]
+[[#Multiplication Principle]]
+[[#Factorial]]
+[[#Combinations]]
+[[#Binomial Theorem]]
+[[#Inclusion-Exclusion]]
+[[#Stars and Bars]]
+[[#Catalan Numbers]]
+# General Strategies
+- Break the problem into parts.
+	- If the things we are counting have no overlap, we can count them independently and then add them up
+	- We can count the number of each kind of thing and them multiply them.
+- Sometimes its easier to count the things you dont want.
+
 # Addition Principle
 If there are $A$ ways of doing one thing and $B$ ways of doing another and we cant do both, there are $A+B$ ways of doing one of them.
 # Multiplication Principle
@@ -150,10 +165,12 @@ $$
 $$
 # Catalan Numbers
 
-The first Catalan numbers are: $1,12,5,14,42,132$
+$$C_n=C_0*C_{n-1}\;+\;C_1*C_{n-2}\;+\;...\;+\;C_{n-1}*C_0$$
+
+The first Catalan numbers are: $1,1,2,5,14,42,132$
 
 ---
-## Example problems solved with the Catalan Numbers
+### Example problems solved with the Catalan Numbers
 1. _Count the valid parenthesis groupings of length $2n$._
 
 We can represent every balanced set as $(A)B$, where $A$ and $B$ are valid groupings.
@@ -163,9 +180,29 @@ Either $A$ or $B$ can be empty, and can contain a max of $n-1$ parenthesis.
 
 If $A$ contains $k$ parenthesis, $B$ contains $n-k-1$.
 
+To get the formula for length $n$ we need to count the number of ways that $A$ can have $0$ pairs and $B$ $n-1$ plus the number of ways that $A$ can have $1$ pair and $B$ $n-1-1$ and so on.
 
-2. _In an $n*n$ grid, count the number of paths of length $2n$ from the upper left corner to the lower right that stay on or above the main diagonal._
-![[Pasted image 20240619151219.png]]
 
-3. _If $2n$ people are in a circular table, in how many ways can they all shake hands such that none of the arms cross each other?_
+$C_0=1$
+$C1=C_0*C_0$
+$C_2=C_0*C_1\;+\;C_1*C_0$
+$C_3=C_0*C_2\;+\;C_1*C_1\;+\;C_2*C_0$
+>There is one way to have no parenthesis.
+>We multiply the 2 because of the [[#Multiplication Principle]].
+
+---
+2. _If $2n$ people are in a circular table, in how many ways can they all shake hands such that none of the arms cross each other?_
 ![[Pasted image 20240619151413.png|400]]
+If we pick one person, he will need to leave an even number of people on each side.
+He can leave $0$ on the right and $n-1$ pairs on the left, $1$ pair and $n-1-1$ on the left and so on.
+
+---
+3. _In an $n*n$ grid, count the number of paths of length $2n$ from the upper left corner to the lower right that stay on or above the main diagonal._
+![[Pasted image 20240619153425.png]]
+This is equivalent to "mountain ranges" staying above $y=0$.
+The mountain ranges are equivalent to valid parenthesis sequences.
+
+---
+4. The number of full binary trees (with either 2 or 0 children per vertex) with $n+1$ leaves. 
+5. The number of ways to cover a ladder $1..n$ using $n$ rectangles.
+

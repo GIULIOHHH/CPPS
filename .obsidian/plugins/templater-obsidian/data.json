@@ -23,7 +23,8 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "Trash/Code.md",
-    "Trash/Template.md"
+    "Trash/Template.md",
+    "Trash/TemplateHistory.md"
   ],
   "startup_templates": [
     ""
