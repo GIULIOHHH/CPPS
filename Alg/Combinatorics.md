@@ -3,7 +3,7 @@
 [[#Addition Principle]]
 [[#Multiplication Principle]]
 [[#Factorial]]
-[[#Combinations]]
+[[#hCombinations]]
 [[#Binomial Theorem]]
 [[#Inclusion-Exclusion]]
 [[#Stars and Bars]]

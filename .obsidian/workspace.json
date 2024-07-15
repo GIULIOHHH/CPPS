@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Holders/History.md",
+                "file": "Alg/Max Flow (Edmonds-Karp).md",
                 "mode": "source",
                 "source": false
               }
@@ -208,9 +208,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8740a7736afecda4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Binary Exponentiation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d732da1d398be521",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Max Flow (Edmonds-Karp).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9b8405d3e7ad606",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Holders/TIMINGS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 19
       }
     ],
     "direction": "vertical"
@@ -276,7 +312,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Holders/History.md",
+                "file": "Holders/TIMINGS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +329,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Holders/History.md",
+                "file": "Holders/TIMINGS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,7 +352,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Holders/History.md"
+                "file": "Holders/TIMINGS.md"
               }
             }
           },
@@ -352,44 +388,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ad6388a0570d110e",
+  "active": "b9b8405d3e7ad606",
   "lastOpenFiles": [
+    "Alg/Hashing.md",
     "Alg/Combinatorics.md",
-    "Holders/Problem Solving.md",
-    "Trash/TemplateHistory.md",
-    "Holders/History.md",
-    "Pasted image 20240619153425.png",
-    "Pasted image 20240619151413.png",
-    "Pasted image 20240619151219.png",
-    "Pasted image 20240618165651.png",
-    "Pasted image 20240618164731.png",
-    "Pasted image 20240618161508.png",
-    "Alg/Max Flow (Edmonds-Karp).md",
-    "Alg/Matrix Exponentiation.md",
-    "Holders/Algorithms.md",
-    "README.md",
-    "Trash/Pasted image 20240613232811.png",
-    "Trash/Pasted image 20240613232014.png",
-    "Trash/Pasted image 20240613232013.png",
     "Holders/TIMINGS.md",
-    "Holders/Good practices.md",
     "C/memset().md",
-    "Alg/Segment Tree.md",
-    "Alg/Dijkstra.md",
     "C/Set.md",
+    "C/Tie.md",
     "C/Struct.md",
+    "C/vector.resize.md",
+    "Alg/All pairs shortest path (Floyd-Warshall).md",
+    "Holders/Algorithms.md",
+    "Alg/Dijkstra.md",
+    "Definitions/Bipartite Graph.md",
+    "Trash/Pasted image 20240625111718.png",
+    "README.md",
+    "Alg/Lowest Common Ancestor.md",
+    "Alg/Binary Exponentiation.md",
+    "Definitions/DFS tree.md",
+    "Alg/Bitmask DP.md",
+    "Trash/Pasted image 20240625003643.png",
+    "Trash/Pasted image 20240625003605.png",
+    "Trash/Pasted image 20240625003511.png",
+    "Trash/Pasted image 20240625003406.png",
+    "Trash/Pasted image 20240625001702.png",
+    "Trash/Pasted image 20240623214611.png",
+    "Trash/8dbe5d89e58b67f3d8e4d8e0e8eb3358ba921b28.gif",
+    "Trash/Pasted image 20240623214245.png",
+    "Trash/Pasted image 20240623214238.png",
+    "Alg/Max Flow (Edmonds-Karp).md",
+    "Holders/History.md",
+    "Trash/Template.md",
+    "Trash/TemplateHistory.md",
+    "Alg/Matrix Exponentiation.md",
+    "Holders/Problem Solving.md",
+    "Holders/Good practices.md",
+    "Alg/Segment Tree.md",
     "Alg/Li chao Trees.md",
-    "Definitions/Division with MOD.md",
-    "Trash/Pasted image 20240609135510.png",
-    "C/Fast Input-Output.md",
-    "Alg/Knuth DP.md",
-    "Convex Hull.md",
-    "C/mutable.md",
-    "Alg/Connected Components DP.md",
-    "Alg/Convex Hull DP.md",
-    "C/Constructor.md",
-    "Alg/Parallel Binary Search.md",
-    "Alg/Divide and conquer DP.md",
     "Holders",
     "Definitions",
     "Alg",

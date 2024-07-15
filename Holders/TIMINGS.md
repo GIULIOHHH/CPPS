@@ -1,4 +1,6 @@
 #CP 
+
+This is for $1s$. If the time is more you can multiply the numbers.
 - Up to $n=500$: $O(n^3)$
 - Up to $n=10^4$: $O(n^2)$
 - Up to $n=10^6$: $O(n*logn)$

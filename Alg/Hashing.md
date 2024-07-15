@@ -146,3 +146,8 @@ Given a string $s$ return the smallest palindrome that can be formed by adding z
 > zyabba/abbayz
 
 file:///C:/Users/admin/Downloads/String_Processing_Rolling_Hash.pdf
+
+
+# Number of palindromic substrings
+You can use hashing and binary search to get the number of palindromic substrings in $O(n*logn)$
+

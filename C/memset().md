@@ -5,4 +5,6 @@
 
 memset(array, 0, sizeof(array));
 
+
+//memset(start,value,distance);
 ```

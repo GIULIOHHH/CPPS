@@ -15,8 +15,8 @@
 - [[Minimum Spanning Tree (MST)]]
 - [[Dijkstra]]
 - [[Shortest path with negative weights]]
+- [[All pairs shortest path (Floyd-Warshall)]]
 - [[Max Flow (Edmonds-Karp)]]
-
 - [[Directed Cycle Detection]]
 
 # Binary search

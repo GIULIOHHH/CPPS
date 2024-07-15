@@ -1,7 +1,31 @@
 # DP
 
 # Matrix
+## Counting digits
+Given a number, for each operation replace each digit n with $n+1$.
+>If we have $192$ we get $2103$.
+### Text
+__Difficulty: Easy__
+__Time Complexity: $O(n*logn)$__
 
+### Methods
+- Matrix exponentiation
+- Sorting
+### Main Takeaway
+If our matrix is raised to the $n$th power we can raise it to the $n+m$ power by multiplying it with one raised to the $m$th power.
+
+>If we have a matrix to the $6$th power and we want to get it to $15$ we can just multiply it by one raised to the $9$th.
+
+We can use this in conjunction with sorting queries to answer them efficiently.
+
+>If our queries are  $5$ and $24$, once we have already computed $5$ we just have to multiply it by $19$ to get $24$.
+### Solution
+We have a $10*10$ matrix, where each index is the number of digits in the number.
+>For example there are $3$ $0$s, $2$ $1$s etc.
+
+When counting the answer, for each digit in the original number we sum up the others.
+
+>Because starting at $n$ we are summing up all possibilites.
 # Flow
 
 # Ad-Hoc
@@ -50,6 +74,8 @@ __Difficulty: Easy__
 __Time Complexity: $O(n)$__
 
 ### Methods
+- Digit DP
+- BFS
 ### Main Takeaway
 
 
@@ -59,6 +85,3 @@ __Time Complexity: $O(n)$__
 ### Solution
 
 #### Logic
-
-
-#### Implementation

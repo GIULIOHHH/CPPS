@@ -5,6 +5,7 @@
 - Allows insertion, checking and deleting in $O(log(n))$
 
 - `set.begin()` is an iterator to the first element.
+- `set.rbegin()` is an iterator to the last element. (reverse begin).
 - `set.end()` is an iterator to the element after the last.
 - `set.size()` returns the size.
 - `set.empty()` returns if the set is empty.
