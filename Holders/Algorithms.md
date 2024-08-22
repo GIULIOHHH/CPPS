@@ -27,3 +27,4 @@
 - [[Matrix Exponentiation]]
 - [[Hashing]]
 - [[Combinatorics]]
+- [[Geometry]]

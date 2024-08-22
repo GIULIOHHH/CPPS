@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "afe5ed28f26abffa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "C/Constructor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57386d979d226ca3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Li chao Trees.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "98de786a2de269a8",
+            "id": "2fd2260a346f6857",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +20,7 @@
             }
           },
           {
-            "id": "50ae16920ec8b116",
+            "id": "71b244ddda26051b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,197 +32,19 @@
             }
           },
           {
-            "id": "a18e1f10cb367e9f",
+            "id": "25d8a2b2594a8845",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Holders/TIMINGS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad6388a0570d110e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "28d1e3f9c98070e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Bitmask DP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "968d97d5c52a25ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Bitmask DP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9784ac0ad415750a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Divide and conquer DP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7cdbb1dc047dcd34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Connected Components DP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f4a0f1cd9ab7c5ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83fb0804fb953de1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Connected Components DP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9850eb89229d3bfd",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Trash/Pasted image 20240609135511.png"
-              }
-            }
-          },
-          {
-            "id": "207e0e51b8eb7a37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Segment Tree.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad7477ad2fd5e03d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Holders/TIMINGS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9cb138cfd9be638e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "45c5aeef7e067ce9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Combinatorics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8740a7736afecda4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Binary Exponentiation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d732da1d398be521",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9b8405d3e7ad606",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Holders/TIMINGS.md",
+                "file": "C/complex.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 19
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -312,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Holders/TIMINGS.md",
+                "file": "Alg/Max Flow (Edmonds-Karp).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -329,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Holders/TIMINGS.md",
+                "file": "Alg/Max Flow (Edmonds-Karp).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -352,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Holders/TIMINGS.md"
+                "file": "Alg/Max Flow (Edmonds-Karp).md"
               }
             }
           },
@@ -388,44 +186,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b9b8405d3e7ad606",
+  "active": "71b244ddda26051b",
   "lastOpenFiles": [
-    "Alg/Hashing.md",
-    "Alg/Combinatorics.md",
+    "Alg/Matrix Exponentiation.md",
+    "Finding the divisors of a number.md",
+    "Alg/Lowest Common Ancestor.md",
+    "Alg/Max Flow (Edmonds-Karp).md",
+    "Alg/Minimum Spanning Tree (MST).md",
+    "Alg/Divide and conquer DP.md",
+    "Alg/Euler Path.md",
+    "Definitions/Associative operation.md",
+    "Definitions/DFS tree.md",
+    "Trash/Pasted image 20240815151939.png",
+    "Trash/Pasted image 20240815154348.png",
+    "Trash/Pasted image 20240815181942.png",
+    "Trash/Pasted image 20240815210826.png",
+    "Bridge Finding.md",
+    "Alg/Disjoint set union (DSU).md",
     "Holders/TIMINGS.md",
-    "C/memset().md",
-    "C/Set.md",
+    "Alg/Segment Tree Beats.md",
+    "Alg/Segment Tree.md",
+    "C/vector.resize.md",
+    "Definitions/Division with MOD.md",
+    "Geometry.md",
+    "Alg/Combinatorics.md",
+    "C/complex.md",
+    "C/back_inserter.md",
+    "C/Constructor.md",
+    "C/Copy 2 arrays of the same size.md",
+    "C/emplace.md",
+    "C/Fast Input-Output.md",
     "C/Tie.md",
     "C/Struct.md",
-    "C/vector.resize.md",
-    "Alg/All pairs shortest path (Floyd-Warshall).md",
-    "Holders/Algorithms.md",
-    "Alg/Dijkstra.md",
-    "Definitions/Bipartite Graph.md",
-    "Trash/Pasted image 20240625111718.png",
-    "README.md",
-    "Alg/Lowest Common Ancestor.md",
-    "Alg/Binary Exponentiation.md",
-    "Definitions/DFS tree.md",
-    "Alg/Bitmask DP.md",
-    "Trash/Pasted image 20240625003643.png",
-    "Trash/Pasted image 20240625003605.png",
-    "Trash/Pasted image 20240625003511.png",
-    "Trash/Pasted image 20240625003406.png",
-    "Trash/Pasted image 20240625001702.png",
-    "Trash/Pasted image 20240623214611.png",
-    "Trash/8dbe5d89e58b67f3d8e4d8e0e8eb3358ba921b28.gif",
-    "Trash/Pasted image 20240623214245.png",
-    "Trash/Pasted image 20240623214238.png",
-    "Alg/Max Flow (Edmonds-Karp).md",
-    "Holders/History.md",
-    "Trash/Template.md",
-    "Trash/TemplateHistory.md",
-    "Alg/Matrix Exponentiation.md",
-    "Holders/Problem Solving.md",
-    "Holders/Good practices.md",
-    "Alg/Segment Tree.md",
-    "Alg/Li chao Trees.md",
+    "Trash/Pasted image 20240815182543.png",
+    "Trash/Pasted image 20240815182502.png",
+    "Trash/Pasted image 20240815182022.png",
+    "Trash/Pasted image 20240815154607.png",
+    "Trash/Pasted image 20240815152042.png",
+    "Trash/5c5fbd97c9aa2ceebe804ac789e5e67837217bdf.gif",
     "Holders",
     "Definitions",
     "Alg",

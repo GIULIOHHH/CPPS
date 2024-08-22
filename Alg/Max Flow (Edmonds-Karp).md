@@ -17,7 +17,7 @@ The remaining capacity of an edge is $remaining\_capacity=capacity-flow$.
 
 ## Reverse Edges
 In the graph we also need to add reverse edges, with a capacity of 0.
-If the normal edge is $(a,b)$ and has a flow of $f(a,b)$, the reversed edge is $(b,a)$ and has a flow of $-f(a,b)$. 
+If the normal edge is $(a,b)$ and Nhas a flow of $f(a,b)$, the reversed edge is $(b,a)$ and has a flow of $-f(a,b)$. 
 
 Whenever we pass some flow into a reverse edge, we need to decrease the normal one. (This is like walking back the normal flow decisions)
  
@@ -124,7 +124,7 @@ A vertex is reachable if it has a remaining capacity larger then 0.
 
 CPH chapter 20
 ## Edge disjoint paths
-Given a graph, find the number of possible paths from the source to the sink. Each edge can appear in at most one path.
+Given a graph, find the number of possible paths from the source to the sink. E ach edge can appear in at most one path.
 ![[Pasted image 20240607213205.png|400]]
 Its the max flow of the graph where the capacity of each edge is one.
 ## Node disjoint paths

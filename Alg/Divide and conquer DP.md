@@ -57,13 +57,13 @@ This is a generic template for this $dp[k][j]=min(dp[k-1][i]+C[i][j])$
 //we hold the last 2 rows in the dp
 vector<long long> dp_before, dp_cur;
 
-//computes dp_cur[l]...dp_cur[r] inclusive
+//computes dp_cur[lb]...dp_cur[rb] inclusive
 //[optl optr] is the range where i is for the midpoint.
 void compute (int lb, int rb, int optl, int optr){
-	if (l>r)
+	if (lb>rb)
 		return;
 	//computes the midpoint
-	int mid (l+r)/2;
+	int mid (lb+rb)/2;
 	//the best value of i and its index
 	pair<long long int> best={INF,-1};
 
