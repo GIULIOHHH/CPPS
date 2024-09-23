@@ -130,7 +130,7 @@ The permutations where the first element is lesser or equal then $1$ are $2*9!$,
 
 Same thing for the permutations where the last element is greater or equal then $8$.
 
-The permutations that include both the conditions are 
+The permutations that dont include any of the conditions are 
 $2*8!*2$, because the first element can be $1$ or $0$, while the last can be $9$ or $8$, and there are $8$ more free choices.
 
 We can do $10!-A \cup B$ to get the solution

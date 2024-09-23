@@ -7,7 +7,7 @@ $$
 # Time Complexity
 
 $$
-O(n)
+O(nlogn)
 $$
 # When 
 When we only care about the order of values.

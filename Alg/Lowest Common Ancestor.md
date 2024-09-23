@@ -11,6 +11,10 @@ $$O(logn)$$
 ## Algorithm
 Starting from the root we need to make a dfs traversal of the tree.
 We create a list were we store each vertex when we first visit it and after the return of the dfs to each one its children.
+>We start at $1$. _WE ADD $1$ TO THE LIST._
+>We do the dfs call to $2$. _WE ADD $1$ TO THE LIST.
+>We do the dfs call to $3$. WE ADD $1$ TO THE LIST.
+>We do the dfs call to $4$. WE ADD $1$ TO THE LIST.
 
 We also store in $first$ the first time each node appears in the list.
 

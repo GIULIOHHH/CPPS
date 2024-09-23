@@ -26,5 +26,6 @@
 - [[Binary Exponentiation]]
 - [[Matrix Exponentiation]]
 - [[Hashing]]
+- [[Treap]]
 - [[Combinatorics]]
 - [[Geometry]]

@@ -25,7 +25,65 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
+                "file": "Definitions/Binary Search Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e1a217f89331050",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/Fast Input-Output.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac5721ca0b8a7930",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Trash/Pasted image 20240903152439.png"
+              }
+            }
+          },
+          {
+            "id": "210f05547a15a136",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/Arrow Operator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "127a511967d32494",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/back_inserter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "186b19918048a0bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Coordinate Compression.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +95,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/complex.md",
+                "file": "C/Arrow Operator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5226b353d1173ef1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alg/Li chao Trees.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -110,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
+                "file": "Alg/Li chao Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md",
+                "file": "Alg/Li chao Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alg/Max Flow (Edmonds-Karp).md"
+                "file": "Alg/Li chao Trees.md"
               }
             }
           },
@@ -186,44 +256,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "71b244ddda26051b",
+  "active": "5226b353d1173ef1",
   "lastOpenFiles": [
-    "Alg/Matrix Exponentiation.md",
-    "Finding the divisors of a number.md",
-    "Alg/Lowest Common Ancestor.md",
-    "Alg/Max Flow (Edmonds-Karp).md",
-    "Alg/Minimum Spanning Tree (MST).md",
-    "Alg/Divide and conquer DP.md",
-    "Alg/Euler Path.md",
-    "Definitions/Associative operation.md",
-    "Definitions/DFS tree.md",
-    "Trash/Pasted image 20240815151939.png",
-    "Trash/Pasted image 20240815154348.png",
-    "Trash/Pasted image 20240815181942.png",
-    "Trash/Pasted image 20240815210826.png",
-    "Bridge Finding.md",
-    "Alg/Disjoint set union (DSU).md",
-    "Holders/TIMINGS.md",
+    "Alg/Bitmask DP.md",
+    "Alg/Convex Hull DP.md",
+    "Alg/Li chao Trees.md",
+    "Alg/Connected Components DP.md",
+    "Alg/Combinatorics.md",
+    "Alg/Directed Cycle Detection.md",
+    "Alg/Treap.md",
+    "Alg/Shortest path with negative weights.md",
     "Alg/Segment Tree Beats.md",
     "Alg/Segment Tree.md",
-    "C/vector.resize.md",
-    "Definitions/Division with MOD.md",
-    "Geometry.md",
-    "Alg/Combinatorics.md",
+    "Alg/Parallel Binary Search.md",
+    "Holders/TIMINGS.md",
+    "Next_permutation.md",
+    "C/Arrow Operator.md",
+    "Alg/Max Flow (Edmonds-Karp).md",
+    "Alg/Lowest Common Ancestor.md",
+    "Alg/Matrix Exponentiation.md",
+    "Alg/Knuth DP.md",
+    "Alg/Fractional Cascading.md",
+    "Alg/Finding Topological Ordering.md",
+    "Alg/Finding the divisors of a number.md",
+    "Alg/Coordinate Compression.md",
     "C/complex.md",
-    "C/back_inserter.md",
-    "C/Constructor.md",
-    "C/Copy 2 arrays of the same size.md",
-    "C/emplace.md",
-    "C/Fast Input-Output.md",
-    "C/Tie.md",
-    "C/Struct.md",
-    "Trash/Pasted image 20240815182543.png",
-    "Trash/Pasted image 20240815182502.png",
-    "Trash/Pasted image 20240815182022.png",
-    "Trash/Pasted image 20240815154607.png",
-    "Trash/Pasted image 20240815152042.png",
-    "Trash/5c5fbd97c9aa2ceebe804ac789e5e67837217bdf.gif",
+    "Alg/Binary Exponentiation.md",
+    "Alg/All pairs shortest path (Floyd-Warshall).md",
+    "Alg/Dijkstra.md",
+    "Trash/Pasted image 20240903182813.png",
+    "Trash/Pasted image 20240905114001.png",
+    "Trash/Pasted image 20240902130948.png",
+    "Trash/Pasted image 20240903152439.png",
+    "Trash/Pasted image 20240903152421.png",
+    "Trash/Pasted image 20240903152415.png",
+    "Trash/Pasted image 20240903152406.png",
+    "Trash/Pasted image 20240903152357.png",
+    "Trash/Pasted image 20240903152154.png",
+    "Trash/Pasted image 20240903134024.png",
     "Holders",
     "Definitions",
     "Alg",

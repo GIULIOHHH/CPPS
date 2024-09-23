@@ -158,3 +158,71 @@ The number of spanning trees is the determinant of the Laplacian matrix:
 - Otherwise $L[i,j]$ is $0$.
 The number of spanning trees is the cofactor of any index.
 The cofactor of $(i,j)$ is $(-1)^{i+j}$ times the determinant of a matrix obtained by removing the $i$th row and the $j$th column.
+
+
+
+
+# redone kruskal template
+```C++
+//This is just a DSU  
+int parent[n];  
+int size[n];  
+  
+//Standard DSU  
+int find_parent(int v){  
+    if (parent[v]==v) return v;  
+    else return parent[v]= find_parent(parent[v]);  
+}  
+//More standard DSU  
+int join(int a,int b){  
+    a= find_parent(a);  
+    b= find_parent(b);  
+    if (size[b]>size[a]) swap(a,b);  
+    parent[b]=a;  
+    size[a]+=size[b];  
+}  
+  
+//This is a custom variable type called edge.  
+struct Edge{  
+    //Edge can hold multiple variables. An edge needs:  
+    //an origin    
+    int from=-1;  
+    //a destination  
+    int to=-1;  
+    //a cost  
+    int cost=-1;  
+    /*this is a custom operator used to compare 2 edges.  
+    Normally < returns true or false depending on if something is    smaller or not. (This is why we are using bool). The custom comparison     is between 2 edges, so we define another edge called "other"*/    
+    bool operator < (Edge other){  
+        //we just compare the 2 costs  
+        return cost<other.cost;  
+    }  
+};  
+  
+int get_MST(){  
+  
+    //this a vector of edges.  
+    vector<Edge> all_edges;  
+    //we need to sort it.  
+    sort(all_edges.begin(), all_edges.end());  
+  
+    //by definition a MST has n-1 edges, but we cannot run a for loop n-1 times  
+    //because some edges might not connect anything new, so we use a variable    //to keep track of the edges.    
+    int edges_added=0;  
+  
+    //we also need an index to iterate over all_edges.  
+    int i=0;  
+  
+    //this keeps track of the MST cost  
+    int cost=0;  
+    while (edges_added<n-1){  
+        //given the current edge with a from and a to, we are checking if the 2 vertices  
+        //are in different connected components.        
+        if (find_parent(all_edges[i].from!= find_parent(all_edges[i].to))){  
+            //increase the cost  
+            cost+=all_edges[i].cost;  
+            edges_added++;  
+            join(all_edges[i].from,all_edges[i].to);
+        }  
+    }
+```

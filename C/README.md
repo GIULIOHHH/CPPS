@@ -19,16 +19,15 @@
 	- [ ] Slope Tric
 	- [ ] Square Tree dp
 - [ ] Euler path
-- [ ] Tries.
-- [ ] Heavy-Light Decomposition?
+- [x] Treaps
 - [ ] Combinatorics
 - [ ] Advanced Matrix Exponentiation.
 - [ ] https://www.youtube.com/watch?v=JDuVLyKn7Yw
 - [ ] Bipartite Graphs
 - [ ] Geometry
 ## td C
-- [ ] Understand pointers
-- [ ] Map 
+- [x] Understand pointers
+- [x] Map 
 - [ ] Unordered Map
 - [x] Set
 

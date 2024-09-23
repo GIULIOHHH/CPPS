@@ -79,30 +79,26 @@ void load_identity(long long I[][SIZE])
             I[y][x] = (y == x ? 1 : 0);
 }
 
-void multiply(long long A[][SIZE], long long B[][SIZE])
-//multiplies 2 matrixes of the same size
-{
-//create an empty product
-    long long product[SIZE][SIZE];
-	//for every y in A
-    for(int i = 0; i < SIZE; i++)
-    {
-	    //for every x in B
-        for(int j = 0; j < SIZE; j++)
-        {
-	        //initialize the product as 0
-            product[i][j] = 0;
-			//Use the formula
-            for(int k = 0; k < SIZE; k++)
-            {
-                product[i][j] += (A[i][k]*B[k][j]);
-            }
-
-        }
-    }
-	//copy the product into A
-	memcpy(A, product, sizeof(product));
-
+//Multiply  
+void multiply(long long A[][SIZE],long long B[][SIZE]){  
+    //initalizing a result matrix  
+    int result[SIZE][SIZE];  
+  
+    for (int y=0;y<SIZE;y++){  
+  
+        for (int x=0;x<SIZE;x++){  
+            //initalizing the result as 0  
+            result[y][x]=0;  
+  
+  
+            for (int n=0;n<SIZE;n++){  
+                result[y][x]+=A[y][n]*B[n][x];  
+            }  
+  
+        }  
+    }  
+    //copues the product into a   
+memcpy(A,result,sizeof(result));  
 }
 void power(long long X[][SIZE], long long power)
 {

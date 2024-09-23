@@ -19,12 +19,13 @@ struct Edge{
 int a,b,weight;
 //operator returns true or false. 
 //It compares another Edge called other.
-bool operator < (Edge const &other){
+bool operator < (Edge const &other) const{
 	//it returns a bool.
 	return weight<other.weight;
 }
 };
 ```
+IF WE WANT TO HAVE A SET OF STRUCTS WE NEED TO DECLARE `bool operator` as a `const`!
 
 ```C++
 //Creates a tree of nodes

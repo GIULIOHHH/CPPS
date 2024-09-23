@@ -51,7 +51,7 @@ pt point_scale(pt p, pt c, double amount) {
 # Rotation#
 To rotate an object by an angle $\theta$ around a center $c$ we ned to rotate the vector from $c$ to every point by $\theta$, aka multiplying by $cos(\theta)+sin(\theta)*i$.
 
-We often use counter clockwise rotation centered on the origin:
+We often use counter clockwise rotation cantered on the origin:
 ```C++
 pt point_rotate(pt p, double theta){return p*polar(1.0,theta);}
 ```
@@ -103,6 +103,7 @@ double orient(pt a, pt b, pt c){return cross(b-a,c-a);}
 ```
 
 
+If we have points $\overrightarrow{A}$ and $\overrightarrow{B}$, and $\overrightarrow{A}\times \overrightarrow{B}>0$, $\overrightarrow{A}$ is to the right of $\overrightarrow{B}$ when looking from the origin.
 ### Checking if a point is in an angle
 We want to know if $P$ is in the angle between $AB$ and $AC$.
 
@@ -138,6 +139,7 @@ bool isconvex(vector<pt> p){
 
 ### Polar sort
 Sorting points in the order that they would collide with a rotating beam from an origin.
+![[Pasted image 20240905114001.png]]
 
 
 

@@ -409,3 +409,141 @@ int result = find_kth(roots[2], roots[20], lb, rb, 5);
 ```
 ### Kth element on a tree path.
 https://www.youtube.com/watch?v=m3uEG4NgJx8&list=PLZU0kmvryb_HZpDW2yfn-H-RxAu_ts6xq&index=6
+
+
+
+## Segment tree template redone
+
+```C++
+int tree[4 * maxn];  
+  
+/*array to store lazy propagation values for each vertex.  
+If the lazy value of a vertex isnt -1 (or another default value), the vertex has already  
+ been updated, but the children havent.*/  
+int lazy[4*maxn];  
+//this function fills in the values of the tree.  
+//index is the current index in the tree.  
+//lbound and rbound are its current boundaries.  
+//array is the original array.  
+void fill_tree(int index, int lbound, int rbound, int array[]) {  
+  
+    //if we reach a leaf (range of only 1 val) we just set the value to the one in the array  
+    if (lbound == rbound) tree[index] = array[lbound];  
+    else{  
+    //otherwise we want to recursivley call fill on both the left and right children.  
+    //in order to do this we first need the mid point.    int mid = (lbound + rbound) / 2;  
+  
+    //left child  
+    fill_tree(index * 2, lbound, mid, array);  
+    //right child  
+    fill_tree((index * 2) + 1, mid + 1, rbound, array);  
+  
+    //Now that we have calculated the values for the children we want to join them to get  
+    //the current node. This depends on the function of the tree (could be sum, max, etc...)    tree[index] = tree[index * 2] + tree[(index * 2) + 1];  
+    }  
+}  
+//pushes the lazy update of a node down to the children void push(int index,int lbound,int rbound){  
+    //this is a default value.  
+    if (lazy[index]!=-1){  
+        //The actual updates depends on the tree type. In this case i need the mid point to  
+        //know how many elements we are changing.        int mid=(lbound+rbound)/2;  
+  
+  
+        //first we update the left child.  
+        tree[index*2]=(mid-lbound)*lazy[index];  
+        //we store the lazy value in the left child  
+        lazy[index*2]=lazy[index];  
+  
+        //we update the right child  
+        tree[(index*2)+1]=(rbound-mid+1)*lazy[index];  
+        //we pass on the value  
+        lazy[(index*2)+1]=lazy[index];  
+  
+        //we set the current lazy value to 0  
+        lazy[index]=0;  
+    }  
+}  
+  
+//sets the value at val_pos to val_update. Navigates the tree in order to update only the required  
+// nodes. |O(logn)|  
+void change_val(int index, int val_pos, int val_update, int lbound, int rbound) {  
+  
+    //if we reach the leaf we need to update the value  
+    if (lbound == rbound) tree[index] = val_update;  
+    else{  
+  
+    //first we calculate the midpoint  
+    int mid = (lbound + rbound) / 2;  
+    //if we have lazy propagtion we HAVE TO PUSH  
+    push(index,lbound,rbound);  
+          
+//of the 2 children we only care about one (the one val_pos is in).  
+    //If val_pos is smaller or equal to mid its in the left subtree.          
+      
+      
+if (val_pos <= mid) {  
+        //Going left  
+        change_val(index * 2, val_pos, val_update, lbound, mid);  
+    } else {  
+        //Going right  
+        change_val((index * 2) + 1, val_pos, val_update, mid + 1, rbound);  
+    }  
+  
+    //updating the current value  
+    tree[index] = tree[index * 2] + tree[(index * 2) + 1];  
+    }  
+  
+}  
+  
+  
+  
+//queries a range (L, R).|O(logn)|  
+//lquery and rquery represent the parts of lbound, rbound that we care about.  
+int query(int index, int lbound, int rbound, int lquery, int rquery) {  
+    //if theres nothing we care about in the current vertex we return 0 (Or another value depending  
+    //on the tree purpose)    if (lquery > rquery) return 0;  
+  
+    //if what we want to know EXACTLY matches the vertex bounds we can just return it  
+    //without going to the children    if (lquery == lbound && rquery == rbound) return tree[index];  
+  
+    //otherwise we need to go to the children, so we need the midpoint.  
+    int mid = (lbound + rbound) / 2;  
+  
+    //if we have lazy propagation when going down to the children we ALWAYS push  
+    push(index,lbound,rbound);  
+  
+    /*When we go to the children we want to combine their 2 answers (Different based on the tree type).  
+    We first go left: rquery is the minimum between itself and the midpoint because we dont want it to    go outside rbound.    Same thing for going right except we get the max.*/    return query(index * 2, lbound, mid, lquery, min(rquery, mid)) +  
+           query((index * 2) + 1, mid + 1, rbound, max(lquery, mid + 1), rquery);  
+}  
+  
+  
+//sets all the values in a range equal to val_pos.  
+//lquery and rquery are the parts of lbound and rbound that we want to update.  
+void range_update(int index,int val_update,int lbound,int rbound,int lquery,int rquery){  
+    //if the range we want to update is outside of the current range return.  
+    if (lquery>rquery) return;  
+    //otherwise if they perfectly match:  
+    if (lquery==lbound&&rquery==rbound){  
+        //we update the current node. (in this case we are setting the values in the range  
+        //equal to val update).        tree[index]=val_update*(rbound-lbound);  
+        //we also update the lazy value in order to remember to push to the children  
+        lazy[index]=val_update;  
+    }  
+    else{  
+        //otherwise we go to the children.  
+        int mid=(lbound+rbound)/2;  
+  
+        //when going down to the children we ALWAYS push the lazy updates of the current node.  
+        push(index,lbound,rbound);  
+  
+        //left child  
+        range_update(index*2,val_update,lbound,mid,lquery,min(rquery,mid));  
+        //right child  
+        range_update((index*2)+1,val_update,mid+1,rbound,max(lquery,mid+1),rquery);  
+  
+        //and then we update the current value  
+        tree[index]=tree[index*2]+tree[(index*2)+1];  
+    }  
+}
+```

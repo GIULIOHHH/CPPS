@@ -107,3 +107,113 @@ while (!q.empty()){
 }
 
 ```
+
+
+
+
+
+### Redone template
+Dense
+```C++
+  
+const int INF=1e9;  
+//for each vertex stores a vector, containing pairs representing edges.  
+//Each pair is (edge_cost, edge_end)  
+vector<vector<pair<int,int>>> adj(n);  
+  
+// Distance from the start (0) to every other vertex.  
+vector<int> dist(n,INF);  
+  
+//Boolean array to mark if a node has been visited  
+vector<bool> visited(n,false);  
+  
+//the distance from 0 to itself is 0  
+dist[0]=0;  
+  
+//since we want the distance from 0 to every other node we run an outer for loop |O(n)|  
+for (int i=0;i<n;i++)
+{  
+  
+    //out of all the reachable edges we need to pick the one with the lowest distance.  
+    //we initialize it as -1 because we still have to pick.    
+    int v=-1;  
+  
+    //we need to check the distance to all edges in order to pick the minimum |O(n^2)|  
+    for (int j=0;j<n;j++)
+    {  
+        //we need to check that we havent already visted v and that its the smallest so far.  
+        if (!visited[j]&&(v==-1||dist[j]<dist[v]))  
+            v=j;  
+    }  
+  
+    //now we visit v.  
+    visited[v]=true;  
+  
+    //now we need to update the distance to the neighbours of v. |O(n^2)|  
+    for (pair<int,int> neighbour:adj[v])
+    {  
+        //the edge cost  
+        int cost=neighbour.first;  
+        //the edge target  
+        int to=neighbour.second;  
+  
+        //the distance to get to the neighbour is the minimum between: itself and  
+        //the distance to get to v+the edge cost.        
+        dist[to]=min(dist[to],dist[v]+cost);  
+    }  
+  
+}
+```
+
+Sparse 
+```C++
+
+const int INF=1000000000;  
+  
+// for each vertex we keep an array with its edges.  
+//Each pair is (edge_cost, edge_destination).  
+vector<vector<pair<int,int>>> adj;  
+  
+//a vector storing the distances from the start to each vertex  
+vector<int> dist(n,INF);  
+  
+//we do not need visited because we visit a vertex only when there is an improvemnt to its distance.  
+  
+//we use a set to store the distances in order to get the shortest one in |O(1)|.  
+//we do n insertions in logn time, for a total of |O(nlogn)|  
+set<pair<int,int>> priority;  
+  
+//we insert to the priority queue the first vertex (with cost 0).  
+priority.insert({0,0});  
+
+//the distance from 0 to itself is 0  
+dist[0]=0;  
+  
+//loop to visit each vertex |O(n+nlogn)|  
+for (int i=0;i<n;i++){  
+    //we need to pick the lowest distance vertex. We get the second int (destination) of  
+    // the first element of the priority queue    int v=priority.begin()->second;  
+  
+    //we then delete the first element.  
+    priority.erase(priority.begin());  
+  
+    //we need to update the other distances.  
+    for (pair<int,int> edge:adj[v]){  
+        //for edge we get the cost and destination  
+        int cost=edge.first;  
+        int to=edge.second;  
+        //if we lower the distance to the destination:  
+        if (dist[to]>dist[v]+cost){  
+            //first we want to remove the old distance from the priority queue |O(logn)|  
+            //if its not there it does nothing            
+            priority.erase({cost,to});  
+  
+            //we update the distance  
+            dist[to]=dist[v]+cost;  
+            //we add the new distance |O(logn)|  
+            priority.insert({dist[to],to});  
+  
+        }  
+    }  
+}
+```

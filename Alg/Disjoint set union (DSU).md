@@ -172,4 +172,53 @@ For each edge $(u,v)$, if $u$ and $v$ are in different subsets join them, otherw
 
 # Alternative version
 https://cp-algorithms.com/graph/bridge-searching-online.html
-## Template
+## redone Template
+```C++
+  
+//we want to store a reperesentative for each vertex.  
+int parent[n];  
+  
+//for each parent stores the size of its set.  
+int size[n];  
+void preprocess(){  
+  
+  
+//preprocessing to define the initial state  
+    for (int i=0;i<n;i++){  
+//each set initially has a size of 1.  
+        size[i]=1;  
+  
+//initially the representative of each node is itself  
+        parent[i]=i;  
+    }  
+  
+};  
+  
+//function to get the representative of v.  
+int find_parent(int v){  
+    //if the parent of a node is itself we have found the representative.  
+    if (parent[v]==v) return v;  
+    //else we recursively call the function while updating the parent array  
+    return parent[v]= find_parent(parent[v]);  
+}  
+  
+  
+//function to merge the sets a and b  
+void merge(int a,int b){  
+    //gets the representatives of both.  
+    a= find_parent(a);  
+    b= find_parent(b);  
+  
+    //we presume that b is the smaller one.  
+    //If it isnt we just swap a and b    
+    if (size[b]>size[a]) swap(a,b);  
+  
+    //We now add b to a:  
+  
+    //we add the size of b to a.    
+    size[a]+=size[b];  
+  
+    //a is now the representative of b  
+    parent[b]=a;  
+}
+```
