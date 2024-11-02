@@ -1,2 +1,2 @@
-[[Good practices]]
+C++ [[Good practices]]
 [[Algorithms]]

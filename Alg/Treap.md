@@ -166,7 +166,7 @@ void split (vertex* treap,int key, vertex* &left_treap, vertex* &right_treap){
 	//if the root is smaller or equal then the key, we only need to split the right
 	else if (treap->key <=key){
 		/*split the right child by key, into left_treap and right_treap.
-		We put left_treap (values smaller then key) inside the right child of treap (since the left child doesnt have anything to do with it) and right_treap (values bigger then key) become the new treap.
+		We put left_treap (values smaller then key) inside the right child of treap (since the left child doesnt have anything to do with it) and right_treap (values bigger then key) becomes the new treap.
 
 		*/
 		split(treap->right_child,key,treap->right_child,right_treap);
@@ -308,6 +308,8 @@ The keys of the treap should be the (0 based) indices of the elements in the arr
 
 The _implicit_ key of a node (or index of an array) is the number of nodes with a smaller key. 
 So the key of a node $N$ is the size of its left subtree, and for every ancestor where $N$ is in the right subtree we add $1$ __PLUS__ its left subtree.
+>Because both the ancestor and the left subtree are smaller then $N$.
+
 $key(N)=size(N->L)+ size(Parent->L)+1$
 ![[Pasted image 20240903152154.png]]
 >In this case to get the key $5$ we do the size of the left subtree ($1$) and since its in the right subtree of key $3$ we do $(+1)$ ($+3$)
@@ -359,6 +361,7 @@ We add a boolean that is true if the subtree has to be reversed.
 When we push this we swap the children and pass on the boolean.
 
 ## Template for reversing
+#### IF IN ANY FUNCTION A VALUE HAS AN `&` IT MEANS THAT THE ANSWER IS RETURNED THERE!
 ```C++
 //definition for the vertex
 struct vertex{
@@ -404,6 +407,7 @@ void push(vertex* v){
 	}
 }
 //merges left and right treap into one
+
 void merge(vertex* &treap,vertex*left_treap,vertex*right_treap){
 	//ALWAYS PUSH
 	push(left_treap);

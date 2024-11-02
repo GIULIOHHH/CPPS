@@ -14,6 +14,7 @@ $$
 # When 
 Whenever we have non-negative weights.
 # Algorithm
+![[Pasted image 20241030173336.png]]
 We start at a vertex $s$.
 - Create an array $dist$ where for each vertex we store the shortest path from $s$.
 	- The distance from $s$ to $s$ is 0.
