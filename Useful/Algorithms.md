@@ -1,4 +1,5 @@
 #CP 
+IN THE ALG FOLDER
 # Basic
 - [[Coordinate Compression]]
 # Data structures
