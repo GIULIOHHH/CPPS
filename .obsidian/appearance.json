@@ -1,4 +1,7 @@
 {
   "accentColor": "#f5a65c",
-  "cssTheme": "Typewriter"
+  "cssTheme": "Typewriter",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono"
 }

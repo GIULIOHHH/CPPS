@@ -83,3 +83,33 @@ else cout<<"the element is at position"<<mid;
 
 ## Time complexity
 $$O(n*logn)$$
+
+# When 
+Whenever:
+1. we want to find the minimum/maximum value in a range so that something is true.
+2. There is no [[greedy]] algorithm for finding the value.
+3. Given a value its simple to check if its true or not.
+
+# Logic
+We can implement in code a boolean function $f(x)$, that given a value, returns true or false.
+We also **HAVE TO MAKE SURE** (or else it doesnt work) that the function is [[monotonic]].
+>Aka it starts with either true or false, at a certain point flips its value and it stays like that until the end.
+![[Pasted image 20241102183356.png]]![[Pasted image 20241102183442.png]]
+
+Given this function, what we need to find is the point $P$ where it flips its boolean value. We can just use a modified binary search:
+
+In this example the function starts at $1$ and we want to find the minimum $x_0$ so that $f(x_0)=0$
+At first $P$ could be anywhere in the range, so we query the middle value.
+![[Pasted image 20241102183727.png]]
+Since its still $1$ we know that $P$ is to its right.
+We continue
+
+![[Pasted image 20241102184015.png]]
+In this case $f(mid)=0$, but we want **the minimum value where its $0$**, so we know that the minimum is to the left of mid.
+![[Pasted image 20241102184046.png]]
+When the while loop runs, we use a variable to keep track of the minimum working $mid$ value.
+
+>The same exact thing works for the maximum.
+
+>[!info]  .
+>We can think of the base binary search as a specific case of binary searching on functions.
