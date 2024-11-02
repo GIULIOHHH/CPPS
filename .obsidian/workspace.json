@@ -151,12 +151,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Basic Alg/Standard DP.md",
+                "file": "Useful/Definitions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Standard DP"
+              "title": "Definitions"
             }
           }
         ],
@@ -318,10 +318,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3d68fddf45a27a08",
+  "active": "8c99a8d7fcdbbd9c",
   "lastOpenFiles": [
-    "readme.md",
+    "Welcome.md",
+    "Holders/History.md",
+    "Holders/Good practices.md",
+    "Useful/Problem Solving.md",
+    "Useful/Definitions.md",
+    "Useful.md",
+    "Useful",
+    "Useful/Algorithms.md",
     "Alg/Basic Alg/Standard DP.md",
+    "readme.md",
     "Alg/Basic Alg/Prefix-Suffix sums.md",
     "Prefix/Suffix sums.md",
     "Prefix",
@@ -335,21 +343,14 @@
     "Alg/Basic Alg",
     "Alg/Knuth DP.md",
     "Alg/Finding Topological Ordering.md",
-    "Holders/Time Complexity.md",
-    "Holders/Algorithms.md",
+    "Useful/Time Complexity.md",
     "Alg/Combinatorics.md",
     "Alg/Directed Cycle Detection.md",
     "Alg/Matrix Exponentiation.md",
-    "Welcome.md",
-    "Holders/Good practices.md",
     "Alg/Dijkstra.md",
     "Alg/Treap.md",
     "Alg/Extra algorithms.md",
     "Alg/Finding the divisors of a number.md",
-    "Alg/Fractional Cascading.md",
-    "Alg/Geometry.md",
-    "Alg/Lowest Common Ancestor.md",
-    "Alg/Max Flow (Edmonds-Karp).md",
     "Trash/Pasted image 20240903182813.png",
     "Trash/Pasted image 20240905114001.png",
     "Trash/Pasted image 20240902130948.png",

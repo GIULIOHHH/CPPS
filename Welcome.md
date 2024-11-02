@@ -1,2 +1,1 @@
-C++ [[Good practices]]
-[[Algorithms]]
+![[readme]]
