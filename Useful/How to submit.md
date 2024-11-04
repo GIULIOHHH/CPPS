@@ -13,10 +13,8 @@ In basso ci sono dei template per i linguaggi di programmazione (in rosso) e dei
 Nella pagina delle sottomissioni:
 Il pulsante per scegliere il file e il pulsante per sottomettere.
 Il linguaggio di programmazione viene scelto in automatico.
-
 ![](Trash/Pasted%20image%2020241104222028.png)
 Una volta sottoposto il problema cliccando su dettagli si possono vedere i risultati dei testcase
-
 
 ![](Trash/Pasted%20image%2020241104222805.png)
 
