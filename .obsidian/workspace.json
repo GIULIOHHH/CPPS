@@ -151,16 +151,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alg/Basic Alg/Binary search.md",
+                "file": "Useful/Definitions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary search"
+              "title": "Definitions"
+            }
+          },
+          {
+            "id": "ad33334bf1784d1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Useful/How to submit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How to submit"
+            }
+          },
+          {
+            "id": "5918cb007856bd05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -318,48 +346,47 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8c99a8d7fcdbbd9c",
+  "active": "5918cb007856bd05",
   "lastOpenFiles": [
-    "Pasted image 20241102184046.png",
-    "Pasted image 20241102184015.png",
-    "Pasted image 20241102184013.png",
-    "Pasted image 20241102183937.png",
-    "Pasted image 20241102183727.png",
-    "Pasted image 20241102183442.png",
-    "Pasted image 20241102183356.png",
-    "Definitions/greedy.md",
-    "Alg/Basic Alg/Binary search.md",
+    "Trash/Pasted image 20241104223051.png",
+    "Useful/How to submit.md",
+    "Trash/Pasted image 20241104223042.png",
+    "Trash/Pasted image 20241104222934.png",
+    "Trash/Pasted image 20241104222805.png",
+    "Trash/Pasted image 20241104222028.png",
+    "Trash/Pasted image 20241104221930.png",
+    "Trash/Pasted image 20241104221750.png",
+    "readme.md",
+    "Useful/What algorithm to use.md",
+    "Trash/Pasted image 20241104221452.png",
+    "Pasted image 20241104221443.png",
+    "Trash/Pasted image 20241104221402.png",
+    "Welcome.md",
+    "Useful/Syllabus.md",
+    "Alg/Basic Alg/Standard DP.md",
+    "Alg/Finding the divisors of a number.md",
+    "Alg/Minimum Spanning Tree (MST).md",
+    "Useful/Time Complexity.md",
+    "Alg/Dijkstra.md",
+    "Alg/Lowest Common Ancestor.md",
+    "Alg/Basic Alg/Prefix-Suffix sums.md",
+    "Alg/Disjoint set union (DSU).md",
+    "Definitions/Queue.md",
+    "Alg/Geometry.md",
+    "Definitions/Division with MOD.md",
+    "C/GCD (massimo comune divisore).md",
+    "Useful/Definitions.md",
     "Alg/Basic Alg/BFS-DFS.md",
+    "Definitions/Degree.md",
+    "Definitions/Stack.md",
+    "Alg/Basic Alg/Binary search.md",
+    "Definitions/greedy.md",
     "Alg/Shortest path with negative weights.md",
     "Alg/Max Flow (Edmonds-Karp).md",
-    "Alg/Directed Cycle Detection.md",
-    "Alg/Lowest Common Ancestor.md",
-    "Trash/Pasted image 20241102122425.png",
-    "Trash/Pasted image 20241102122456.png",
-    "Trash/Pasted image 20241102122252.png",
-    "Trash/Pasted image 20241102122244.png",
-    "Trash/Template.md",
-    "readme.md",
-    "Useful/Time Complexity.md",
-    "Useful/Definitions.md",
-    "Useful/Algorithms.md",
-    "Welcome.md",
-    "Holders/History.md",
-    "Holders/Good practices.md",
-    "Useful/Problem Solving.md",
-    "Useful.md",
     "Useful",
-    "Alg/Basic Alg/Standard DP.md",
-    "Alg/Basic Alg/Prefix-Suffix sums.md",
-    "Prefix/Suffix sums.md",
     "Prefix",
-    "C/Next_permutation.md",
-    "BFS/DFS.md",
     "BFS",
-    "Alg/All pairs shortest path (Floyd-Warshall).md",
     "Alg/Basic Alg",
-    "Alg/Knuth DP.md",
-    "Alg/Finding Topological Ordering.md",
     "Holders",
     "Definitions",
     "Alg",
