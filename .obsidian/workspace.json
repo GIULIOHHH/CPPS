@@ -179,12 +179,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "Useful/How to submit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "How to submit"
             }
           }
         ],
@@ -348,9 +348,11 @@
   },
   "active": "5918cb007856bd05",
   "lastOpenFiles": [
+    "Trash/Pasted.md",
     "Useful/How to submit.md",
-    "Trash/Pasted image 20241104223051.png",
     "readme.md",
+    "Welcome.md",
+    "Trash/Pasted image 20241104223051.png",
     "Alg/Basic Alg/Prefix-Suffix sums.md",
     "Trash/Pasted image 20241104223042.png",
     "Trash/Pasted image 20241104222934.png",
@@ -362,7 +364,6 @@
     "Trash/Pasted image 20241104221452.png",
     "Pasted image 20241104221443.png",
     "Trash/Pasted image 20241104221402.png",
-    "Welcome.md",
     "Useful/Syllabus.md",
     "Alg/Basic Alg/Standard DP.md",
     "Alg/Finding the divisors of a number.md",
