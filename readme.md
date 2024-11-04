@@ -1,8 +1,8 @@
 # What to do?
-1. Read [How to submit](Useful/How%20to%20submit.md) (Useful/How to submit).
-2. Read [What algorithm to use](Useful/What%20algorithm%20to%20use.md) ((Useful/What algorithm to use)
-3. Check [Time Complexity](Useful/Time%20Complexity.md) (Useful/Time Complexity). Given the constraints of a solution, depending on the numbers, it can be used to understand what algorithm should be used.
-4. Read [Syllabus](Useful/Syllabus.md) (Useful/Syllabus). These are the algorithms and required knowledge for the various difficulties (represented by books) in the OIS.
+1. Read [How to submit](Useful/How%20to%20submit.md) .
+2. Read [What algorithm to use](Useful/What%20algorithm%20to%20use.md).
+3. Check [Time Complexity](Useful/Time%20Complexity.md). Given the constraints of a solution, depending on the numbers, it can be used to understand what algorithm should be used.
+4. Read [Syllabus](Useful/Syllabus.md). These are the algorithms and required knowledge for the various difficulties (represented by books) in the OIS.
 
 Optionally read below for more algorithms.
 # Algorithms in order of usefulness:
