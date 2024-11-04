@@ -2,7 +2,7 @@
 
 A sinistra (in verde) ci sono i problemi.
 
-
+![](../Trash/Pasted%20image%2020241104222934.png)
 Ogni problema ha due link:
 1. Descrizione
 2. Sottoposizione
